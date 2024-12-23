@@ -1,6 +1,6 @@
 export default function ImageCard({ src, alt, rotationClass }) {
     return (
-      <div className="relative">
+      <div className="relative ">
         <img
           src={src}
           alt={alt}

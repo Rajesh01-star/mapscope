@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import LeadContent from "./LeadContent";
-import ImageGrid from "./ImageGrid";
+import LeadContent from "../components/LeadContent";
+import ImageGrid from "../components/ImageGrid";
+import DomainCarousel from "../components/DomainCarousal";
 
 export default function GeoAISection() {
   const el = useRef(null);
@@ -31,9 +32,8 @@ export default function GeoAISection() {
   }, []);
 
   return (
-    <section className="h-screen flex items-center">
-      <div className="container m-auto w-full gap-4 flex flex-col lg:flex-row items-center">
-        {/* Left Section */}
+    <section className="h-screen flex flex-col justify-around">
+      <div className="container mx-auto w-full gap-4 flex flex-col lg:flex-row items-start">
         <LeadContent
           heading={[
             "Incorporation of ",
@@ -45,7 +45,6 @@ export default function GeoAISection() {
           position="left" // Align text to the left for this section
         />
 
-        {/* Right Section */}
         <div className="lg:w-1/2 text-center flex flex-col items-center gap-4 lg:text-left mt-8 lg:mt-0">
           {/* Typing Animation */}
           <h3 className="text-4xl font-semibold text-gray-800 mb-4">
@@ -58,6 +57,9 @@ export default function GeoAISection() {
 
           <ImageGrid />
         </div>
+      </div>
+      <div className="container mx-auto">
+        <DomainCarousel />
       </div>
     </section>
   );

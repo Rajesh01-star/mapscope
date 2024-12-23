@@ -1,8 +1,8 @@
-import DomainsSection from "./components/DomainSection";
-import GeoAISection from "./components/GeoAISection";
-import HeroSection from "./components/HeroSection";
+import HeroSection from "./Sections/HeroSection";
 import Navbar from "./components/Navbar";
-import WhyChoose from "./components/WhyChoose";
+import WhyChoose from "./Sections/WhyChoose";
+import GeoAISection from "./Sections/GeoAISection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -11,8 +11,7 @@ export default function Home() {
       <HeroSection />
       <WhyChoose />
       <GeoAISection />
-      <DomainsSection />
-      {/* Rest of the page content */}
+      <Footer />
     </section>
   );
 }
