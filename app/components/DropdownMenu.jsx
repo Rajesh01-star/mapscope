@@ -29,7 +29,7 @@ export default function DropdownMenu({
           onMouseLeave={onMouseLeave}
         >
           <ul className="grid grid-cols-4 justify-center items-center">
-            {link.submenu.map((item, subIndex) => (
+            {link.submenu?.map((item, subIndex) => (
               <li
                 key={subIndex}
                 className="flex items-center p-4 hover:bg-gray-200 cursor-pointer"

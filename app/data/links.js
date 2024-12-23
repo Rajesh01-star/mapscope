@@ -140,5 +140,5 @@ export const links = [
         subtext: "Join our growing team",
       },
     ],
-  },
+  }
 ];
