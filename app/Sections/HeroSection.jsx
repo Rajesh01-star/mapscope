@@ -51,7 +51,7 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="h-screen overflow-hidden bg-black relative">
+    <div className="h-screen relative">
       {/* Slideshow Container */}
       <div className="w-full h-full">
         {slides.map((slide, index) => (

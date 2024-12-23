@@ -8,9 +8,7 @@ import DropdownMenu from "./DropdownMenu";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   const [activeDropdown, setActiveDropdown] = useState(null);
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -25,6 +23,20 @@ export default function Navbar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    // Lock/unlock body scroll when mobile menu is opened/closed
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = "auto"; // Enable scrolling
+    }
+
+    // Cleanup on component unmount
+    return () => {
+      document.body.style.overflow = "auto"; // Ensure scrolling is re-enabled
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <nav className="fixed flex justify-between items-center w-full top-0 lg:px-32 px-10 py-6 bg-black text-white z-10">

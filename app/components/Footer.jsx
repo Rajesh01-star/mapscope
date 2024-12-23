@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Vision Section */}
           <div>
-            <h2 className="text-2xl font-light tracking-wider mb-4">
+            <h2 className="text-2xl font-semibold tracking-wider mb-4">
               Make your idea come to life!
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -26,7 +26,7 @@ export default function Footer() {
 
           {/* Contact Section */}
           <div>
-            <h3 className="text-lg font-light uppercase tracking-widest mb-4">
+            <h3 className="text-lg font-semibold uppercase tracking-widest mb-4">
               Contacts
             </h3>
             <ul className="space-y-3 text-gray-400">
@@ -53,7 +53,7 @@ export default function Footer() {
 
           {/* Social Section */}
           <div>
-            <h3 className="text-lg font-light uppercase tracking-widest mb-4">
+            <h3 className="text-lg font-semibold uppercase tracking-widest mb-4">
               Social
             </h3>
             <div className="flex space-x-4">
@@ -62,28 +62,28 @@ export default function Footer() {
                 aria-label="Facebook"
                 className="hover:text-gray-400 transition-colors"
               >
-                <FaFacebookF className="h-6 w-6" />
+                <FaFacebookF className="h-6 w-6 hover:text-blue-500" />
               </Link>
               <Link
                 href="#"
                 aria-label="Twitter"
                 className="hover:text-gray-400 transition-colors"
               >
-                <FaTwitter className="h-6 w-6" />
+                <FaTwitter className="h-6 w-6 hover:text-blue-500" />
               </Link>
               <Link
                 href="#"
                 aria-label="Instagram"
                 className="hover:text-gray-400 transition-colors"
               >
-                <FaInstagram className="h-6 w-6" />
+                <FaInstagram className="h-6 w-6 hover:text-blue-500" />
               </Link>
               <Link
                 href="#"
                 aria-label="LinkedIn"
                 className="hover:text-gray-400 transition-colors"
               >
-                <FaLinkedinIn className="h-6 w-6" />
+                <FaLinkedinIn className="h-6 w-6 hover:text-blue-500" />
               </Link>
             </div>
           </div>

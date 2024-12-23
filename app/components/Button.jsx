@@ -10,7 +10,7 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`group bg-blue-500 text-white py-2 px-6 rounded-md flex items-center justify-center space-x-2 hover:bg-blue-600 transition ${className}`}
+      className={`group bg-blue-500 py-2 px-6 rounded-md flex items-center justify-center space-x-2 hover:bg-blue-600 transition ${className}`}
     >
       <span>{children}</span>
       {icon && (
