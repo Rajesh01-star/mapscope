@@ -13,7 +13,7 @@ export default function LeadContent({
     <div
       className={`relative w-full lg:w-1/2 mt-8 lg:mt-0 text-center lg:text-${position} ${className}`}
     >
-      <h2 className="text-3xl sm:text-4xl font-semibold text-gray-800 mb-4">
+      <h2 className="text-3xl font-semibold text-gray-800 mb-4">
         {Array.isArray(heading)
           ? heading.map((part, index) =>
               typeof part === "string" ? (
@@ -32,6 +32,7 @@ export default function LeadContent({
           className="mt-4 flex text-white"
           icon={icon}
           onClick={onButtonClick}
+          link={"https://www.mapscope.in/training"}
         >
           {buttonLabel}
         </Button>

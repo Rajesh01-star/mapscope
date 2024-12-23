@@ -47,11 +47,11 @@ export default function GeoAISection() {
 
         <div className="lg:w-1/2 text-center flex flex-col items-center gap-4 lg:text-left mt-8 lg:mt-0">
           {/* Typing Animation */}
-          <h3 className="text-4xl font-semibold text-gray-800 mb-4">
+          <h3 className="text-2xl lg:text-3xl font-semibold text-gray-800 mb-4">
             GeoAI in{" "}
             <span
               ref={el}
-              className="text-4xl font-semibold text-gray-800 mb-4"
+              className="text-2xl lg:text-3xl font-semibold text-gray-800 mb-4"
             ></span>
           </h3>
 

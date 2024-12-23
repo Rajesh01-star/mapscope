@@ -1,4 +1,8 @@
-import { FaDigitalOcean, FaGlobe, FaBolt, FaDatabase } from "react-icons/fa";
+import { FaLeaf } from "react-icons/fa";
+import { LuBrainCircuit } from "react-icons/lu";
+import { FaHouseCrack } from "react-icons/fa6";
+import { MdOutlineSatelliteAlt } from "react-icons/md";
+
 const cards = [
   {
     heading: "Digital Transformation",
@@ -9,7 +13,7 @@ const cards = [
       "IoT Implementation",
       "Environmental Monitoring",
     ],
-    icon: <FaDigitalOcean />,
+    icon: <LuBrainCircuit />,
   },
   {
     heading: "Environmental Analysis",
@@ -20,17 +24,17 @@ const cards = [
       "Ecosystem Services Assessment",
       "Climate Change Analysis",
     ],
-    icon: <FaGlobe />,
+    icon: <FaLeaf />,
   },
   {
-    heading: "AI/ML for Climate",
+    heading: "Climate Change Analysis",
     subTexts: [
       "Early Warning Systems",
       "Trend Detection Algorithms",
       "Optimized Resource Allocation",
       "Informed Adaptation Planning",
     ],
-    icon: <FaBolt />,
+    icon: <FaHouseCrack />,
   },
   {
     heading: "Spatial Data Infrastructure",
@@ -40,7 +44,7 @@ const cards = [
       "Collaborative Workflows",
       "Geospatial Insights",
     ],
-    icon: <FaDatabase />,
+    icon: <MdOutlineSatelliteAlt />,
   },
 ];
 export default cards;

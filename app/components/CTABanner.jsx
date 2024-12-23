@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CTABanner() {
   return (
-    <div className="mt-26 mx-10 lg:mx-80 relative rounded-md bg-gradient-to-r from-blue-500 to-blue-400 lg:p-4 p-6 shadow-lg transition-all hover:shadow-xl mb-20">
+    <div className="lg:mt-26 mt-40 mx-10 lg:mx-80 relative rounded-md bg-gradient-to-r from-blue-500 to-blue-400 lg:p-4 p-6 shadow-lg transition-all hover:shadow-xl mb-20">
       <div className="flex flex-col sm:flex-row items-center justify-between">
         <h2 className="text-xl font-bold text-white mb-4 sm:mb-0 lg:text-3xl">
           Make your idea come to life!

@@ -2,8 +2,9 @@ import HeroSection from "./Sections/HeroSection";
 import Navbar from "./components/Navbar";
 import WhyChoose from "./Sections/WhyChoose";
 import GeoAISection from "./Sections/GeoAISection";
-import Footer from "./components/Footer";
+import ResearchTrainingSection from "./components/ResearchTrainingSection";
 import CTABanner from "./components/CTABanner";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <WhyChoose />
       <GeoAISection />
+      <ResearchTrainingSection />
       <CTABanner />
       <Footer />
     </section>

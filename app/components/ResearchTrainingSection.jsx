@@ -2,7 +2,7 @@ import LeadContent from "./LeadContent";
 
 export default function ResearchTrainingSection() {
   return (
-    <section className="h-screen py-12 px-6 bg-white">
+    <section className="py-12 lg:py-20 px-6">
       <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center">
         {/* Left Section: Paragraph */}
         <LeadContent
@@ -20,7 +20,7 @@ export default function ResearchTrainingSection() {
         />
 
         {/* Right Section: Heading and Button */}
-        <div className="lg:w-1/2 text-center lg:text-left">
+        <div className="mt-10 lg:mt-0 lg:w-1/2 text-center lg:text-left">
           <p className="text-lg text-gray-600 leading-relaxed">
             Upscale your career with tailored courses—specialized workshops and
             bootcamps for seasoned GIS experts, certification programs for
