@@ -2,30 +2,8 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-
-const slides = [
-  {
-    image: "/images/earth.jpg",
-    title: "Empowering Your Digital Future",
-    subtitle: "Discover innovative solutions tailored for you.",
-    cta1: "Learn More",
-    cta2: "Get Started",
-  },
-  {
-    image: "/images/map.jpg",
-    title: "Transforming Ideas Into Reality",
-    subtitle: "Your vision, our expertise.",
-    cta1: "Our Services",
-    cta2: "Contact Us",
-  },
-  {
-    image: "/images/sonar.jpg",
-    title: "Building Smarter Solutions",
-    subtitle: "Innovate with confidence.",
-    cta1: "Explore Now",
-    cta2: "Join Us",
-  },
-];
+import slides from "../data/slides";
+import MotionDiv from "../components/MotionDiv";
 
 export default function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +29,7 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="h-screen relative">
+    <MotionDiv classes={"h-screen relative"}>
       {/* Slideshow Container */}
       <div className="w-full h-full">
         {slides.map((slide, index) => (
@@ -60,9 +38,6 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: currentIndex === index ? 1 : 0 }}
             transition={{ duration: 1 }}
-            // className={`absolute inset-0 ${
-            //   currentIndex === index ? "z-10" : "z-0 pointer-events-none"
-            // }`}
           >
             <Image
               src={slide.image}
@@ -138,6 +113,6 @@ export default function HeroSection() {
           />
         ))}
       </div>
-    </div>
+    </MotionDiv>
   );
 }

@@ -1,5 +1,5 @@
-import HeroSection from "./Sections/HeroSection";
 import Navbar from "./components/Navbar";
+import HeroSection from "./Sections/HeroSection";
 import WhyChoose from "./Sections/WhyChoose";
 import GeoAISection from "./Sections/GeoAISection";
 import ResearchTrainingSection from "./components/ResearchTrainingSection";
@@ -8,13 +8,19 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <section>
+    <section className="h-screen overflow-y-scroll scroll-smooth scroll-snap-y snap-mandatory">
       <Navbar />
+
       <HeroSection />
+
       <WhyChoose />
+
       <GeoAISection />
+
       <ResearchTrainingSection />
+
       <CTABanner />
+
       <Footer />
     </section>
   );

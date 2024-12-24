@@ -9,8 +9,8 @@ export default function ImageGrid() {
           src={image.src}
           alt={image.alt}
           className={`${
-            index > 1 ? "hidden lg:block" : "block"
-          } w-full h-auto rounded-lg transform lg:${image.rotationClass}`}
+            index > 1 ? " hidden lg:block" : "block"
+          } w-full h-auto rounded-lg transform cursor-pointer lg:${image.rotationClass}`}
         />
       ))}
     </div>
