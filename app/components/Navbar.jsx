@@ -42,7 +42,7 @@ export default function Navbar() {
     <nav className="fixed flex justify-between items-center w-full top-0 lg:px-32 px-10 py-6 bg-black text-white z-10">
       {/* Logo */}
       <div>
-        <Image src="/logo.webp" width={150} height={75} alt="logo" />
+        <Image src="/logo.webp" width={175} height={85} alt="logo" />
       </div>
 
       {/* Navigation Links */}

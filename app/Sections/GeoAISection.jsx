@@ -33,7 +33,7 @@ export default function GeoAISection() {
 
   return (
     <section className="h-auto lg:h-screen mt-24 lg:mt-20 flex flex-col justify-evenly">
-      <div className="container lg:mx-auto w-full flex lg:flex-row flex-col items-center gap-20 lg:gap-4 px-8 lg:px-0">
+      <div className="container mx-auto w-full flex lg:flex-row flex-col items-center gap-20 lg:gap-4 px-8 lg:px-0">
         <LeadContent
           heading={[
             "Incorporation of ",
